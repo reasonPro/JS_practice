@@ -1,0 +1,218 @@
+@import 'animation.css';
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(../Lenovo-wallpaper-6_DcyKDyp.jpg);
+	background-size: cover;
+}
+
+/*стилі для JavaScript*/
+#mainBoxes{
+    display: block;
+}
+
+#changeTextBlock{
+	width: 90%;
+	margin: 0 auto;
+	display: none;
+}
+
+#changeStyleBlock{
+	padding: 15px;
+    display: none;
+}
+#optionBox{
+   display: none;
+}
+
+#tableOption{
+    display: block;
+    width: 286px;
+    margin-top: 20px;
+    
+}
+#ulOption{
+    display: none;
+    width: 300px;
+}
+/*стилі для JavaScript*/
+
+
+
+
+
+#box1{
+	width: 400px;
+	height: 300px;
+	border: 3px solid white;
+	border-radius: 20px;
+	background-color: #00e8005c;
+	margin: 0 auto;
+	padding: 20px 20px;
+	color: white;
+	text-shadow: 1px 2px black;
+	overflow: auto;
+	line-height: 1.5;
+}
+#edit{
+	display: block;
+	width: 140px;
+	background-color: #00ffff75;
+	border: 8px solid #00ffff00;
+	border-radius: 20px;
+	font-size: 15px;
+	outline: none;
+	color: yellow;
+	transition: 0.5s;
+}
+
+#edit:hover{
+	background-color: #00ffffc4;
+	
+}
+#edit:active{
+	font-size: 20px;
+	font-weight: bold;
+}
+#style{
+	display: block;
+	width: 140px;
+	background-color: #00ffff75;
+	border: 8px solid #00ffff00;
+	border-radius: 20px;
+	font-size: 15px;
+	font-weight: 400;
+	outline: none;
+	color: yellow;
+	transition: 0.5s;
+}
+#style:hover{
+	background-color: #00ffffc4;
+}
+#style:active{
+	font-size: 20px;
+	font-weight: bold;
+}
+#boxButtons{
+	width: 400px;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+ 
+#box2{
+	width: 400px;
+	height: 300px;
+	border: 3px double white;
+	border-radius: 20px;
+	margin: 30px auto;
+	background-color: #04a5f287;
+	transition: 0.5s;
+}
+
+#box2:hover{
+	border: 3px solid yellow;
+	background-color: #04a5f2c4;
+}
+
+#textArea{
+	width: 100%;
+	height: 200px;
+	margin: 10px auto;
+
+}
+
+#formSerif, #formColor, #textStyle, #formRadio{
+	margin-top: 20px;
+	color: white;
+	text-shadow: 1px 2px black;
+}
+
+.container{
+	margin-top: -70px;
+    margin-left: 280px;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	flex-flow: row wrap;
+	display: none;
+}
+.box, .boxBack{
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+#tableOrUl{
+    padding: 15px;
+    width: 600px;
+    height: 700px;
+    border: 3px solid white;
+	border-radius: 20px;
+	margin: 30px auto;
+	background-color: #00e8005c;
+	color: white;
+    text-shadow: 1px 2px black;
+}
+
+
+#ulOption>span{
+    line-height: 3;
+}
+#choiceUlOrTable{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#howManyRowTable{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#howManyRowTable>span{
+    line-height: 1.5;
+}
+
+#tableWidthHeight{
+    margin-top: 20px;
+        margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+#createTable{
+    display: block;
+    margin-top: 40px;
+}
+#createUl{
+    display: block;
+    margin-top: 40px;
+}
+
+#tableOption{
+	display: none;
+}
+
+#elementsUl, #rowElementsTable, #colElementsTable, #widthColTable, #weightLine, #heightColTable{
+	width: 40px;
+    height: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 3px;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.5s;
+}
+
+#elementsUl:focus, #rowElementsTable:focus, #colElementsTable:focus, #widthColTable:focus, #weightLine:focus, #heightColTable:focus{
+	box-shadow: 1px 1px 10px white;
+}
+

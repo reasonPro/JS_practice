@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css"> </head>
+
+<body>
+    <div class="pulse"></div>
+    <div class="pulse2"></div>
+    <div class="pulse3"></div>
+    <div class="pulse4"></div>
+    <div class="pulse5"></div>
+    <div class="pulse6"></div>
+    <div class="pulse7"></div>
+    <div class="pulse8"></div>
+    <div class="pulse9"></div>
+    <div class="pulse10"></div>
+    <div id="mainBoxes">
+
+        <div id="box1">
+            <p> Щось там собі пише 1 </p>
+            <p> Щось там собі пише 2 </p>
+            <p> Щось там собі пише 3 </p>
+            <p> Щось там собі пише 4 </p>
+            <p> Щось там собі пише 5 </p>
+        </div>
+
+        <div id="boxButtons">
+            <input type="button" value="Редагувати" id="edit">
+            <input type="button" value="Стилізувати" id="style"> 
+        </div>
+
+        <div id="box2">
+
+            <div id="changeTextBlock">
+                <textarea name="text" id="textArea"></textarea>
+                <input type="button" value="Зберегти" id="saveText">
+                <input type="button" value="Додати" id="addOption"> 
+            </div>
+
+            <div id="changeStyleBlock">
+
+                <form name="radioForm" id="formRadio"> 
+                <span>Розмір тексту: </span>
+                    <input type="radio" name="radioButton" value="12px"> 12px
+                    <input type="radio" name="radioButton" value="14px"> 14px
+                    <input type="radio" name="radioButton" value="16px" checked> 16px
+                    <input type="radio" name="radioButton" value="18px"> 18px
+                    <input type="radio" name="radioButton" value="20px"> 20px 
+                </form>
+
+                <form id="formSerif"> <span>Лігатура</span>
+                    <select name="serif" id="serif">
+                        <option value="fantasy">Fantasy</option>
+                        <option value="arial">Arial</option>
+                        <option value="tachoma">Tachoma</option>
+                        <option value="verdana">Verdana</option>
+                    </select>
+                </form>
+
+                <form id="formColor">
+                    <input type="button" value="Колір тексту" id="textColorClick">
+                    <input type="button" value="Колір фону" id="textbackgroundClick">
+                </form>
+
+                <form id="textStyle">
+                    <input type="checkbox" name="checkBold"> Жирний текст
+                    <input type="checkbox" name="checkItalic"> Курсивний текст 
+                </form>
+
+            </div>
+
+            <div class="container" id="blockTextColor">
+                <div class="box" style="color: red; background: red"></div>
+                <div class="box" style="color: green; background: green"></div>
+                <div class="box" style="color: yellow; background: yellow"></div>
+                <div class="box" style="color: gray; background: gray"></div>
+                <div class="box" style="color: blue; background: blue"></div>
+                <div class="box" style="color: pink; background: pink"></div>
+                <div class="box" style="color: violet; background: violet"></div>
+                <div class="box" style="color: lightgrey; background: lightgray"></div>
+                <div class="box" style="color: lightblue; background: lightblue"></div>
+            </div>
+
+            <div class="container" id="blockBackgroundColor">
+                <div class="boxBack" style="background: red"></div>
+                <div class="boxBack" style="background: green"></div>
+                <div class="boxBack" style="background: yellow"></div>
+                <div class="boxBack" style="background: gray"></div>
+                <div class="boxBack" style="background: blue"></div>
+                <div class="boxBack" style="background: pink"></div>
+                <div class="boxBack" style="background: violet"></div>
+                <div class="boxBack" style="background: lightgray"></div>
+                <div class="boxBack" style="background: lightblue"></div>
+            </div>
+        </div>
+    </div>
+    <div id="optionBox">
+        <div id="tableOrUl">
+            <h1>Оберіть що саме ви хочете додати</h1>
+            
+           <form id="choiceUlOrTable">
+                <input type="radio" id="choiceOfTable" name="choice"> Таблицю
+                <input type="radio" id="choiceOfUl" name="choice"> Список
+           </form>
+            
+           <div id="tableOption"> 
+
+               <div id="howManyRowTable">
+                   <span>Введіть кількість рядків таблиці</span> <input type="text" id="rowElementsTable"> 
+                   <span>Введіть кількість стовпців таблиці</span> <input type="text" id="colElementsTable">
+               </div>
+
+               <h2>Стилізуйте таблицю:</h2> 
+
+               <div id="tableWidthHeight">
+                       <span>Введіть ширину комірки таблиці</span> <input type="text" id="widthColTable"> 
+                       <span>Введіть висоту комірки таблиці</span> <input type="text" id="heightColTable"> 
+               </div>
+
+               <div>
+                   <span>Товщина</span> <input type="text" id="weightLine">
+               </div>
+               <span>Тип лінії</span>
+                <select name="typeLine" id="lineType">
+                    <option value="solid">solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                </select> <span>Колір лінії</span>
+
+                <select name="colorLine" id="lineColor">
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                </select>
+
+                <input type="button" value="Створити таблицю" id="createTable"> 
+            </div>
+            
+            <div id="ulOption"> 
+               <span>Введіть кількість елементів у списку</span> <input type="text" id="elementsUl"> 
+               <span>Тип маркування списку:</span>
+
+                <select name="typeMark" id="markType">
+                    <option value="sircle">sircle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+
+                <input type="button" value="Створити список" id="createUl"> 
+            </div>
+        </div>
+    </div>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
